@@ -9,4 +9,6 @@ class Rectangle: public Shape {
         Rectangle();
         Rectangle(double width, double length);
         double getArea();
+        void identify();
+        ~Rectangle();
 };

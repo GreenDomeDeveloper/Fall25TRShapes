@@ -1,6 +1,25 @@
 #include "Shape.hpp"
+#include <iostream>
+using namespace std;
 
-double Shape::getArea()
+int Shape::numShapes=0;
+
+void Shape::identify()
 {
-    return 0.0;
+    cout<<"I am a generic shape"<<endl;
+}
+
+int Shape::getNumShapes()
+{
+    return numShapes;
+}
+
+void Shape::incNumShapes()
+{
+    numShapes++;
+}
+
+Shape::~Shape()
+{
+    cout<<"Destroying Shape"<<endl;
 }

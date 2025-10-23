@@ -8,4 +8,6 @@ class Circle: public Shape {
         Circle();
         Circle(double radius);
         double getArea();
+        void identify();
+        ~Circle();
 };
